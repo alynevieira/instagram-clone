@@ -201,6 +201,7 @@ nav {
 
 .navbar ul {
   display: flex;
+  align-items: center;
   flex-direction: row;
   list-style: none;
   width: 14rem;
@@ -234,39 +235,100 @@ nav {
   width: 100%;
 }
 
-.card:nth-child(1) {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+
   overflow: hidden;
+  
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;
+
+  margin-bottom: 0.5rem;
+}
+
+.border {
+  padding: 1rem;
+  position: relative;
+  padding: 3px;
+  margin-bottom: 0.5rem;
+
+  width: 65px;
+  height:65px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.circle--golden {
+  background: url('../img/golden.jpg');
+
+  background-clip: content-box;
+  padding: 1px;
+}
+
+.circle--bull {
+  background: url('../img/bull_terrier.jpg');
+
+  background-clip: content-box;
+  padding: 1px;
+}
+
+.circle--doge {
+  background: url('../img/doge.jpg');
+
+  background-clip: content-box;
+  padding: 1px;
+}
+
+.circle--dog1 {
+  background: url('../img/dog7.png');
+
+  background-clip: content-box;
+  padding: 1px;
+}
+
+.circle--dog2 {
+  background: url('../img/dog8.jpg');
+
+  background-clip: content-box;
+  padding: 1px;
+}
+
+.circle--dog3 {
+  background: url('../img/dog9.jpg');
+
+  background-clip: content-box;
+  padding: 1px;
+}
+
+.circle--dog4 {
+  background: url('../img/dog5.jpg');
+
+  background-clip: content-box;
+  padding: 1px;
 }
 
 .content-story {
   text-align: center;
 }
 
-.card:nth-child(3) .nav-card .circle {
-  background: url('../img/doge.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+.card:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.card:nth-child(2), .card:nth-child(3), .card:nth-child(4), .card:nth-child(5) {
-  padding: 0;
-}
-
-.card:nth-child(2) .circle, .card:nth-child(3) .circle, .card:nth-child(4) .circle, .card:nth-child(5) .circle   {
+.card:nth-child(2) .circle, .card:nth-child(3) .circle, .card:nth-child(4) .circle, .card:nth-child(5) .circle, .card:nth-child(6) .circle   {
   width: 40px;
   height: 40px;
   
   margin: 1rem;
+}
+
+.card:nth-child(2), .card:nth-child(3), .card:nth-child(4), .card:nth-child(5), .card:nth-child(6) {
+  padding: 0;
 }
 
 .card:nth-child(2) .image {
@@ -295,6 +357,14 @@ nav {
 
 .card:nth-child(5) .image {
   background: url('../img/dog4.jpg');
+  height: 35rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:nth-child(6) .image {
+  background: url('../img/dog6.jpg');
   height: 35rem;
   background-position: center center;
   background-repeat: no-repeat;
@@ -364,7 +434,7 @@ nav {
 
 .detail small {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
 
   color: var(--color-gray);
 }
@@ -386,10 +456,78 @@ nav {
     border: none;
     background: transparent;
   }
+
+  .detail {
+    display: none;
+  }
+
+  .container-fluid {
+    width: 100%;
+  }
+
+  .cards {
+    width: 100%;
+
+    margin-top: 0;
+  }
+
+  .card:nth-child(2), .card:nth-child(3), .card:nth-child(4), .card:nth-child(5), .card:nth-child(6) {
+    border: transparent;
+  }
+
+  .card:nth-child(1) {
+    overflow: auto;
+  }
+
+  .content-story {
+    margin-right: 1rem;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .card-left {
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .container {
     width: 90%;
+  }
+
+  .detail {
+    display: none;
+  }
+
+  .container-fluid {
+    width: 100%;
+  }
+
+  .cards {
+    width: 100%;
+
+    margin-top: 0;
+  }
+
+  .card:nth-child(2), .card:nth-child(3), .card:nth-child(4), .card:nth-child(5), .card:nth-child(6) {
+    border: transparent;
+  }
+
+  .card:nth-child(1) {
+    overflow: auto;
+  }
+
+  .content-story {
+    margin-right: 1rem;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .card-left {
+    width: 30%;
   }
 }
