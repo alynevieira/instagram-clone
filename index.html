@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Login - Instagram</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <section class="app-main--image">
+      <img src="img/cellphone.png" alt="Instagram">
+    </section>
+    <section class="app-main--content">
+
+      <div class="app-main--group" id="continue" >
+        <img src="img/logo-instagram.svg" class="logo-instagram" alt="Logo instagram">
+
+        <img src="img/profile.png" class="profile" alt="Imagem perfil">
+
+        <button type="button" class="btn-continue">Continuar como thehusky</button>
+
+        <a href="#" onclick="profileLogin()">Remover conta</a>
+      </div>
+
+      <div class="app-main--group" id="continue2" >
+        <p>Não é thehusky?</p>
+        <p>
+          <a href="#" onclick="profileLogin()">Troque a conta</a>
+          ou
+          <a href="#"> Inscreva-se</a>
+        </p>
+      </div>
+
+      <div class="app-main--group" id="login" style="display: none;">
+        <img src="img/logo-instagram.svg" class="logo-instagram" alt="Logo instagram">
+
+        <input class="app-main--input first" placeholder="Número de celular, usuário ou email">
+        <input class="app-main--input" placeholder="Senha">
+
+        <button type="button" class="btn-continue">Entrar</button>
+        <small>Esqueceu a senha?</small>
+      </div>
+
+      <div class="app-main--group" id="login2" style="display: none;">
+        <p>Não tem uma conta? </p>
+        <p>Entre como
+          <a href="#" onclick="profileContinue()">thehusky</a>
+        </p>
+      </div>
+
+      <div class="app-main--group">
+        <p>Baixe o app.</p>
+        <div class="app-main--apps">
+          <img src="img/app-store-botao.png" alt="Apple store">
+          <img src="img/google-play-badge.png" alt="Play store">
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

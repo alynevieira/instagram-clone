@@ -1,0 +1,179 @@
+:root {
+  --color-blue: #0095f6;
+  --color-gray: #8e8e8e;
+  --color-gray--light: #fafafa;
+  --color-white: #ffffff;
+
+  --color-input: #0095f66e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: var(--color-gray--light);
+}
+
+a {
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+:focus {
+  outline: var(--color-input) auto 1px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.app-main--image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 26rem;
+}
+
+.app-main--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 44%;
+
+  min-height: 34rem;
+}
+
+.app-main--group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+
+  background-color: var(--color-white);
+}
+
+.logo-instagram {
+  height: 4rem;
+}
+
+.profile {
+  width: 6rem;
+  border-radius: 50%;
+  outline: none;
+
+  margin: 1rem 0;
+}
+
+.btn-continue {
+  background-color: var(--color-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 600;
+  color: var(--color-white);
+
+  margin: 1rem 0;
+}
+
+.app-main--group a {
+  margin: 0.5rem 0;
+}
+
+.app-main--group:nth-child(2) p, .app-main--group:nth-child(4) p {
+  color: var(--color-gray);
+}
+
+.app-main--group:nth-child(5) {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app-main--apps {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 80%;
+}
+
+.app-main--apps img {
+  width: 8rem;
+
+  margin: 1rem 0;
+}
+
+.app-main--input {
+  padding: 0.7rem;
+  margin: 0.2rem 0;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+
+  width: 75%;
+}
+
+.app-main--input.first {
+  margin: 2rem 0 0.2rem;
+}
+
+.app-main--group:nth-child(3) button {
+  width: 75%;
+}
+
+.app-main--group:nth-child(3) small  {
+  text-align: right;
+  color: var(--color-gray);
+}
+
+@media only screen and (max-width: 768px) {
+  .app-main--image {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .app-main--content {
+    width: 100%;
+  }
+
+  .app-main--group {
+    border: none;
+    background: transparent;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
