@@ -26,6 +26,8 @@ body {
   line-height: 18px;
 
   background-color: var(--color-gray--light);
+
+  overflow-x: hidden;
 }
 
 a {
@@ -111,6 +113,7 @@ a {
 
 .app-main--group:nth-child(5) {
   background-color: transparent;
+  margin-top: 1rem;
   padding: 0;
   border: 0;
 
@@ -128,7 +131,7 @@ a {
 .app-main--apps img {
   width: 8rem;
 
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .app-main--input {
@@ -150,6 +153,219 @@ a {
 
 .app-main--group:nth-child(3) small  {
   text-align: right;
+  color: var(--color-gray);
+
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------- */
+/* ------------------------- DETAIL -------------------------*/
+/* --------------------------------------------------------- */
+
+.page {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: var(--color-white);
+  border-bottom: 1px solid lightgray;
+
+  height: 3.5rem;
+  width: 100vw;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 2.5rem;
+}
+
+.search {
+  width: 10%;
+}
+
+.search input {
+  border: 1px solid lightgray;
+  background-color: var(--color-gray--light);
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 14rem;
+
+  justify-content: space-evenly;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+
+  margin-top: 2rem;
+}
+
+.card {
+  padding: 1.3rem;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+
+  margin-bottom: 2rem;
+
+  background-color: var(--color-white);
+  width: 100%;
+}
+
+.card:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.content-story {
+  text-align: center;
+}
+
+.card:nth-child(3) .nav-card .circle {
+  background: url('../img/doge.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.card:nth-child(2), .card:nth-child(3), .card:nth-child(4), .card:nth-child(5) {
+  padding: 0;
+}
+
+.card:nth-child(2) .circle, .card:nth-child(3) .circle, .card:nth-child(4) .circle, .card:nth-child(5) .circle   {
+  width: 40px;
+  height: 40px;
+  
+  margin: 1rem;
+}
+
+.card:nth-child(2) .image {
+  background: url('../img/dog1.jpg');
+  height: 35rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:nth-child(3) .image {
+  background: url('../img/dog2.jpg');
+  height: 35rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:nth-child(4) .image {
+  background: url('../img/dog3.jpg');
+  height: 35rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:nth-child(5) .image {
+  background: url('../img/dog4.jpg');
+  height: 35rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-card span {
+  font-weight: 600;
+}
+
+.nav-card--bottom { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 1rem;
+}
+
+.card-left {
+  display: flex;
+  justify-content: space-between;
+  width: 18%;
+}
+
+.detail {
+  width: 34%;
+
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  right: 0;
+  height: 10.5rem;
+}
+
+.detail--image {
+  background: url('../img/profile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.detail--text {
+  padding-left: 1rem;
+}
+
+.detail--text .user {
+  font-weight: 600;
+}
+
+.detail--text .name {
+  color: var(--color-gray);
+}
+
+.detail small {
+  position: absolute;
+  bottom: 0;
+
   color: var(--color-gray);
 }
 
