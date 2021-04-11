@@ -492,6 +492,42 @@ nav {
   }
 }
 
+/* --------------------------------------------------------- */
+/* ------------------------- LOADING ------------------------*/
+/* --------------------------------------------------------- */
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  background: var(--color-gray--light);
+
+  z-index: 10;
+}
+
+.loading--content .path {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+
+  color: #fff;
+  border-radius: 1.1rem;
+
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: dash 2s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
 @media only screen and (max-width: 1024px) {
   .container {
     width: 90%;

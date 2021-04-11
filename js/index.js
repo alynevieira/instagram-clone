@@ -20,3 +20,12 @@ function profileLogin() {
   login.style.display = 'flex';
   login2.style.display = 'flex';
 }
+
+function pageLoad() {
+  setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loading").remove();
+  document.getElementById("page").style.display = "initial";
+}
